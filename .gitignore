@@ -1,0 +1,8 @@
+design-extract/
+design.tar.gz
+site/
+.vercel
+node_modules
+.DS_Store
+Thumbs.db
+.claude/
