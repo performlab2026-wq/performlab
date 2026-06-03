@@ -81,10 +81,19 @@
     height: 68px;
   }
   .nav-logo {
-    display: flex; align-items: center; gap: 10px;
-    font-family: Anton; letter-spacing: 1.5px; font-size: 18px;
+    display: flex; align-items: center; gap: 12px;
+    text-decoration: none;
   }
-  .nav-logo .slash { color: var(--red); }
+  .nav-logo .logo-text { line-height: 1; }
+  .nav-logo .logo-perform {
+    font-family: Anton; font-size: 15px; letter-spacing: 2px;
+    text-transform: uppercase; color: #fff;
+  }
+  .nav-logo .logo-lab {
+    font-family: Anton; font-size: 15px; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--red);
+    border-top: 1.5px solid var(--red); padding-top: 2px; margin-top: 2px;
+  }
   .nav-links {
     display: flex; gap: 34px;
     font-size: 12px; font-weight: 600; letter-spacing: 0.8px;
@@ -397,11 +406,14 @@
 <nav class="nav">
   <div class="wrap nav-inner">
     <a href="#top" class="nav-logo">
-      <svg width="26" height="26" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-        <polygon points="34,2 52,2 30,62 12,62" fill="#2A2A2E"/>
-        <polygon points="12,2 30,2 52,62 34,62" fill="#FF2D3D"/>
+      <svg width="28" height="34" viewBox="0 0 44 52" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="2,2 14,2 42,50 30,50" fill="#2D2D32"/>
+        <polygon points="2,50 14,50 42,2 30,2" fill="#FF2D3D"/>
       </svg>
-      JOÃO<span class="slash">/</span>VICTOR
+      <div class="logo-text">
+        <div class="logo-perform">PERFORM</div>
+        <div class="logo-lab">LAB</div>
+      </div>
     </a>
     <div class="nav-links">
       <a href="#sobre">Sobre</a>
@@ -600,8 +612,17 @@
   <div class="wrap">
     <div class="footer-inner">
       <div>
-        <div class="footer-name">JOÃO <span>VICTOR</span></div>
-        <div class="footer-tagline">Treinador de Performance · Educação Física</div>
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+          <svg width="22" height="28" viewBox="0 0 44 52" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="2,2 14,2 42,50 30,50" fill="#2D2D32"/>
+            <polygon points="2,50 14,50 42,2 30,2" fill="#FF2D3D"/>
+          </svg>
+          <div class="logo-text">
+            <div class="logo-perform" style="font-size:13px;">PERFORM</div>
+            <div class="logo-lab" style="font-size:13px;">LAB</div>
+          </div>
+        </div>
+        <div class="footer-tagline">João Victor · Treinador de Performance</div>
         <div class="footer-tagline" style="margin-top: 4px;">Londrina/PR · Online para o mundo todo</div>
       </div>
       <div class="footer-links">
